@@ -1,4 +1,4 @@
-@extends('admin.auth._layout.auth')
+@extends('admin._layout.app')
 
 @section('title', 'Documents');
 

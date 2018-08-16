@@ -2,10 +2,10 @@
 <nav class="side-menu">
     <ul class="side-menu-list">
         <li class="grey">
-	            <span>
-	                <i class="font-icon font-icon-dashboard"></i>
-	                <span class="lbl">Dashboard</span>
-	            </span>
+            <a href="{{ route('admin.dashboard') }}">
+                <i class="font-icon font-icon-dashboard"></i>
+                <span class="lbl">Dashboard</span>
+            </a>
         </li>
 
         <li class="grey with-sub">
@@ -14,16 +14,16 @@
 	                <span class="lbl">Members</span>
 	            </span>
             <ul>
-                <li><a href="#"><span class="lbl">Users</span></a></li>
-                <li><a href="#"><span class="lbl">Providers</span></a></li>
+                <li><a href="{{ route('admin.users.index') }}"><span class="lbl">Users</span></a></li>
+                <li><a href="{{ route('admin.providers.index') }}"><span class="lbl">Providers</span></a></li>
             </ul>
         </li>
 
         <li class="grey">
-	            <span>
-	                <i class="glyphicon glyphicon-duplicate"></i>
-	                <span class="lbl">Account Statements</span>
-	            </span>
+            <a href="{{ route('admin.dashboard') }}">
+                <i class="font-icon font-icon-dashboard"></i>
+                <span class="lbl">Account Statement</span>
+            </a>
         </li>
 
         <li class="grey with-sub">
@@ -55,9 +55,9 @@
 	                <span class="lbl">General</span>
 	            </span>
             <ul>
-                <li><a href="#"><span class="lbl">Service Types</span></a></li>
-                <li><a href="#"><span class="lbl">Documents</span></a></li>
-                <li><a href="#"><span class="lbl">PromoCode</span></a></li>
+                <li><a href="{{ route('admin.services.index') }}"><span class="lbl">Service Types</span></a></li>
+                <li><a href="{{ route('admin.documents.index') }}"><span class="lbl">Documents</span></a></li>
+                <li><a href="{{ route('admin.promocodes.index') }}"><span class="lbl">PromoCode</span></a></li>
             </ul>
         </li>
 
@@ -72,12 +72,11 @@
             </ul>
         </li>
 
-
         <li class="grey">
-	            <span>
-	                <i class="font-icon font-icon-user"></i>
-	                <span class="lbl">Settings</span>
-	            </span>
+            <a href="{{ route('admin.settings.index') }}">
+                <i class="font-icon font-icon-dashboard"></i>
+                <span class="lbl">Setting</span>
+            </a>
         </li>
 
     </ul>

@@ -15,21 +15,20 @@
 
 <div class="page-content">
 
-    <header class="page-content-header">
-        <div class="container-fluid">
-            <div class="tbl">
-                <div class="tbl-row">
-
-                    @yield('title')
-
-                </div>
-            </div>
-        </div>
-    </header>
-
-    @include('shared._flash')
 
     <div class="container-fluid">
+
+        <header class="section-header">
+            <div class="tbl">
+                <div class="tbl-row">
+                    <div class="tbl-cell">
+                        <h3>@yield('title')</h3>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        @include('shared._flash')
 
         @yield('main')
 

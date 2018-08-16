@@ -1,6 +1,6 @@
 @extends('admin._layout.app')
 
-@section('title', 'Reviews');
+@section('title', 'Users');
 
 @section('main')
 

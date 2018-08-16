@@ -31,8 +31,10 @@ Route::get( 'reviews', 'DashboardController@index' );
 //
 Route::get( 'requests', 'DashboardController@index' );
 
-//
-Route::get( 'payments', 'DashboardController@index' );
+// setting
+Route::get( 'settings', 'SettingController@index' )->name( 'settings.index' );
+Route::post( 'settings', 'SettingController@store' )->name( 'settings.store' );
 
 //
+Route::get( 'payments', 'DashboardController@index' );
 Route::get( 'payments/history', 'DashboardController@index' );
