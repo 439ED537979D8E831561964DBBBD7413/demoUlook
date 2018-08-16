@@ -4,10 +4,8 @@ namespace App\Http\Controllers\Consumer\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Consumer\Api\UpdateUserRequest;
-use App\Http\Resources\UserResource;
 
 class UserController extends Controller {
-
 	public function index() {
 		return auth()->user();
 	}
@@ -29,6 +27,13 @@ class UserController extends Controller {
 		}
 
 		return $user;
+
+	}
+
+	public function getSetting() {
+		$user = auth()->user();
+
+		$user['favorites_location'] = $user->locations;
 
 
 	}

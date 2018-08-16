@@ -16,6 +16,7 @@ class CreateProvidersTable extends Migration {
 			$table->string( 'first_name' );
 			$table->string( 'last_name' );
 			$table->string( 'email' )->unique();
+			$table->enum( 'gender', [ 'MALE', 'FEMALE' ] )->default( 'MALE' );
 			$table->string( 'mobile' )->nullable();
 			$table->string( 'password' );
 			$table->string( 'profile_image' )->nullable();

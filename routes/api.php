@@ -19,6 +19,9 @@ Route::group( [ 'namespace' => 'Consumer\Api' ], function () {
 		// location routes
 		Route::post( 'location', 'LocationController@update' ); // update location
 
+		// location routes
+		Route::post( 'setting', 'UserCotroller@getSetting' );
+
 	} );
 
 } );
