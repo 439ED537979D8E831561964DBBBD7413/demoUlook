@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Consumer\Api;
 
-use App\Http\Controllers\Controller;
 use App\Http\Requests\Consumer\Api\UpdateUserRequest;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class UserController extends Controller {
 	public function index() {
@@ -37,5 +38,4 @@ class UserController extends Controller {
 
 
 	}
-
 }

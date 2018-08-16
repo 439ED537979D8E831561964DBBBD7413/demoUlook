@@ -2,16 +2,16 @@
 <html>
 <head lang="en">
 
-    @include('backend._layout._head')
+    @include('admin._layout._head')
 
 </head>
 <body class="with-side-menu">
 
 <header class="site-header">
-    @include('backend._layout._header')
+    @include('admin._layout._header')
 </header><!--.site-header-->
 
-@include('backend._layout._sidebar')
+@include('admin._layout._sidebar')
 
 <div class="page-content">
 
@@ -27,7 +27,7 @@
         </div>
     </header>
 
-    @include('backend.shared._flash')
+    @include('shared._flash')
 
     <div class="container-fluid">
 
@@ -36,6 +36,6 @@
     </div><!--.container-fluid-->
 </div><!--.page-content-->
 
-@include('backend._layout._script');
+@include('admin._layout._script');
 </body>
 </html>
