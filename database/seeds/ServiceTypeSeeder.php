@@ -14,8 +14,8 @@ class ServiceTypeSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->truncate();
-        DB::table('users')->insert(
+        DB::table('service_types')->truncate();
+        DB::table('service_types')->insert(
             [
                 'name' => 'Sedan',
                 'provider_name' => 'Driver',
