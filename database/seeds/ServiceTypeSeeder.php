@@ -3,6 +3,7 @@
 use App\ServiceType;
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class ServiceTypeSeeder extends Seeder
 {
@@ -13,8 +14,8 @@ class ServiceTypeSeeder extends Seeder
      */
     public function run()
     {
-        ServiceType::truncate();
-        ServiceType::insert(
+        DB::table('users')->truncate();
+        DB::table('users')->insert(
             [
                 'name' => 'Sedan',
                 'provider_name' => 'Driver',

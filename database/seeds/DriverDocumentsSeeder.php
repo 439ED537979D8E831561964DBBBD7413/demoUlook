@@ -1,7 +1,7 @@
 <?php
 
-use App\Document;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class DriverDocumentsSeeder extends Seeder
 {
@@ -13,8 +13,8 @@ class DriverDocumentsSeeder extends Seeder
     public function run()
     {
 
-        Document::truncate();
-        Document::insert(
+        DB::table('documents')->truncate();
+        DB::table('documents')->insert(
             [
                 'name' => 'Driving Licence',
                 'type' => 'DRIVER',

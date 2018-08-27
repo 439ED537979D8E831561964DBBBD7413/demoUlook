@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
     {
 
         // admin table seeding
-//        $this->call(AdminTableSeeder::class);
+        $this->call(AdminTableSeeder::class);
         $this->call(ServiceTypeSeeder::class);
         $this->call(DriverDocumentsSeeder::class);
     }
