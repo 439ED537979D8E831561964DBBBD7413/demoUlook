@@ -12,6 +12,8 @@ class DriverDocumentsSeeder extends Seeder
      */
     public function run()
     {
+
+        Document::truncate();
         Document::insert(
             [
                 'name' => 'Driving Licence',
