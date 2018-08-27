@@ -9,6 +9,7 @@ Route::group(['middleware' => ['api', 'auth:providerapi']], function () {
     Route::post('logout', 'LoginController@logout');
     Route::get('/', 'UserController@index'); // update user
     Route::post('/', 'UserController@update');
+    Route::post('/with', 'UserController@with');
 
     // location routes
     Route::post('location', 'LocationController@update'); // update location

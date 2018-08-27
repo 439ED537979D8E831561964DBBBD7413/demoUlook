@@ -14,7 +14,7 @@ Route::group(['namespace' => 'Consumer\Api'], function () {
         Route::post('logout', 'LoginController@logout');
         Route::post('update/name', 'RegisterController@updateName'); // update name
         Route::get('/', 'UserController@index'); // update user
-        Route::post('/with', 'UserController@with'); // update user
+        Route::post('/with', 'UserController@with');
         Route::post('/', 'UserController@update');
 
         // location routes
