@@ -73,7 +73,7 @@ class TokenAuthController extends AccessTokenController
         $email = $data['username'];
 
         switch ($data['provider']) {
-            case 'customers';
+            case 'provider_api';
 
                 try {
 
