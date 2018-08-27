@@ -15,7 +15,7 @@ class ServiceTypeSeeder extends Seeder
     public function run()
     {
         DB::table('service_types')->truncate();
-        DB::table('service_types')->insert(
+        DB::table('service_types')->insert([
             [
                 'name' => 'Sedan',
                 'provider_name' => 'Driver',
@@ -68,6 +68,6 @@ class ServiceTypeSeeder extends Seeder
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ]
-        );
+        ]);
     }
 }

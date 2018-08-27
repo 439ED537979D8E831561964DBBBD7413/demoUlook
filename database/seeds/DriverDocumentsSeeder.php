@@ -14,7 +14,7 @@ class DriverDocumentsSeeder extends Seeder
     {
 
         DB::table('documents')->truncate();
-        DB::table('documents')->insert(
+        DB::table('documents')->insert([
             [
                 'name' => 'Driving Licence',
                 'type' => 'DRIVER',
@@ -43,6 +43,6 @@ class DriverDocumentsSeeder extends Seeder
                 'name' => 'Fitness Certificate',
                 'type' => 'VEHICLE',
             ]
-        );
+        ]);
     }
 }
