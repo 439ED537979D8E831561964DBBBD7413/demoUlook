@@ -7,8 +7,11 @@ use App\Http\Controllers\Controller;
 
 class UserController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
+
+        return $request;
+
         return auth()->guard('provider')->user();
     }
 }

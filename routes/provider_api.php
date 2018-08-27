@@ -7,7 +7,6 @@ Route::group(['middleware' => ['api', 'auth:provider']], function () {
 
     // user details update routes
     Route::post('logout', 'LoginController@logout');
-    Route::post('update/name', 'RegisterController@updateName'); // update name
     Route::get('/', 'UserController@index'); // update user
     Route::post('/', 'UserController@update');
 
