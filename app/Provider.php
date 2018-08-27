@@ -29,6 +29,11 @@ class Provider extends Authenticatable
         'remember_token',
     ];
 
+    public function devices()
+    {
+        return $this->hasMany(ProviderDevices::class);
+    }
+
     public function service()
     {
         return $this->hasOne(ProviderService::class);

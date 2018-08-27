@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Provider\Api;
 
 use App\Http\Controllers\Controller;
+use App\ProviderDevices;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -14,8 +15,18 @@ class UserController extends Controller
 
     public function with(Request $request)
     {
-        auth()->user()->fill($request->all());
-        return auth()->user();
+
+        $provider = auth()->user();
+
+        $providerDevice = new ProviderDevices();
+        $providerDevice->provider_id = $provider->id;
+        $providerDevice->type = $request->device_type;
+        $providerDevice->udid = $request->device_id;
+        $providerDevice->token = $request->device_token;
+        $providerDevice->save();
+
+        return $provider;
+
     }
 
 }
