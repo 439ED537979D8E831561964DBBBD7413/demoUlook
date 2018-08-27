@@ -58,9 +58,6 @@ class TokenAuthController extends AccessTokenController
      */
     public function issueToken(ServerRequestInterface $request)
     {
-
-        dd(parent::issueToken($request));
-
         $body = (parent::issueToken($request));
         $token = json_decode($body, true);
 
@@ -76,7 +73,7 @@ class TokenAuthController extends AccessTokenController
         $email = $data['username'];
 
         switch ($data['provider']) {
-            case 'provider_api';
+            case 'providerapi';
 
                 try {
 
