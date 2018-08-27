@@ -156,6 +156,7 @@ return [
         Laravel\Socialite\SocialiteServiceProvider::class,
         anlutro\LaravelSettings\ServiceProvider::class,
         LaravelFCM\FCMServiceProvider::class,
+        SMartins\PassportMultiauth\Providers\MultiauthServiceProvider::class,
 
 
         /*
