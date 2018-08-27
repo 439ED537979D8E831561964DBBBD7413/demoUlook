@@ -13,13 +13,13 @@ class ProviderTableSeeder extends Seeder
     public function run()
     {
         DB::table('providers')->truncate();
-        DB::table('providers')->insert([
-            ['name' => 'TenStudio',
+        DB::table('providers')->insert(
+            [
+                'first_name' => 'Provider',
+                'last_name' => 'Demo',
                 'email' => 'provider@drogenidesoftwares.in',
-                'password' => bcrypt('123456'),],
-            ['name' => 'TenStudio Demo',
-                'email' => 'provider@drogenidesoftwares.in',
-                'password' => bcrypt('123456'),]
-        ]);
+                'password' => bcrypt('123456'),
+            ]
+        );
     }
 }

@@ -14,10 +14,10 @@ class AdminTableSeeder extends Seeder
     {
         DB::table('admins')->truncate();
         DB::table('admins')->insert([
-            ['name' => 'TenStudio',
+            ['name' => 'Admin',
                 'email' => 'admin@drogenidesoftwares.in',
                 'password' => bcrypt('123456'),],
-            ['name' => 'TenStudio Demo',
+            ['name' => 'Admin Demo',
                 'email' => 'demo@drogenidesoftwares.in',
                 'password' => bcrypt('123456'),]
         ]);
