@@ -3,38 +3,42 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get( 'login', 'Auth\LoginController@showLoginForm' );
-Route::post( 'login', 'Auth\LoginController@login' )->name( 'login' );
-Route::post( 'logout', 'Auth\LoginController@logout' )->name( 'logout' );
+Route::get('login', 'Auth\LoginController@showLoginForm');
+Route::post('login', 'Auth\LoginController@login')->name('login');
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
-// dashboard
-Route::get( 'dashboard', 'DashboardController@index' )->name( 'dashboard' );
+Route::group(['middleware' => ['auth:providerapi']], function () {
 
-// users
-Route::resource( 'users', 'UserController' );
 
-// providers
-Route::resource( 'providers', 'ProviderController' );
+    // dashboard
+    Route::get('dashboard', 'DashboardController@index')->name('dashboard');
 
-// services
-Route::resource( 'services', 'ServiceController' );
+    // users
+    Route::resource('users', 'UserController');
 
-// documents
-Route::resource( 'documents', 'DocumentController' );
+    // providers
+    Route::resource('providers', 'ProviderController');
 
-//
-Route::resource( 'promocodes', 'PromocodeController' );
+    // services
+    Route::resource('services', 'ServiceController');
 
-//
-Route::get( 'reviews', 'DashboardController@index' );
+    // documents
+    Route::resource('documents', 'DocumentController');
 
-//
-Route::get( 'requests', 'DashboardController@index' );
+    //
+    Route::resource('promocodes', 'PromocodeController');
 
-// setting
-Route::get( 'settings', 'SettingController@index' )->name( 'settings.index' );
-Route::post( 'settings', 'SettingController@store' )->name( 'settings.store' );
+    //
+    Route::get('reviews', 'DashboardController@index');
 
-//
-Route::get( 'payments', 'DashboardController@index' );
-Route::get( 'payments/history', 'DashboardController@index' );
+    //
+    Route::get('requests', 'DashboardController@index');
+
+    // setting
+    Route::get('settings', 'SettingController@index')->name('settings.index');
+    Route::post('settings', 'SettingController@store')->name('settings.store');
+
+    //
+    Route::get('payments', 'DashboardController@index');
+    Route::get('payments/history', 'DashboardController@index');
+});
