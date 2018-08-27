@@ -19,4 +19,8 @@ Route::group(['middleware' => ['api', 'auth:providerapi']], function () {
     // services
     Route::get('services', 'ServiceController@index');
 
+    // location
+    Route::post('location', 'LocationController@store');
+
+
 });
