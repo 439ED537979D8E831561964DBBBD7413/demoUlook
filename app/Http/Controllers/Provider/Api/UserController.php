@@ -9,6 +9,6 @@ class UserController extends Controller
 {
     public function index()
     {
-        return auth()->user();
+        return auth()->guard('provider')->user();
     }
 }
