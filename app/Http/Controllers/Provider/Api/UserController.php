@@ -10,6 +10,6 @@ class UserController extends Controller
     public function index(Request $request)
     {
 
-        return auth()->guard('provider')->user();
+        return auth()->user();
     }
 }
