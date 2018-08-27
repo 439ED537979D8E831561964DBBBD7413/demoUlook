@@ -81,7 +81,7 @@ class TripController extends Controller
 
             $trip = new Trip();
             $trip->booking_id = Helper::generate_booking_id();
-            $trip->user_id = Auth::user()->id;
+            $trip->user_id = $user->id;
 
             // check for manual request & broadcast request is not
             // store provider id for calling
@@ -173,6 +173,11 @@ class TripController extends Controller
         } catch (Exception $e) {
             return response()->json(['error' => trans('api.something_went_wrong')], 500);
         }
+
+    }
+
+    public function cancelTrip()
+    {
 
     }
 
