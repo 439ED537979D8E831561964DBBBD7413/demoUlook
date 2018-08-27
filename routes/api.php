@@ -25,6 +25,9 @@ Route::group(['namespace' => 'Consumer\Api'], function () {
         // services
         Route::get('services', 'ServiceController@index');
 
+        // trips
+
+
     });
 
 });
