@@ -58,7 +58,7 @@ class TokenAuthController extends AccessTokenController
      */
     public function issueToken(ServerRequestInterface $request)
     {
-        $body = (parent::issueToken($request))->getBody()->__toString();
+        $body = (parent::issueToken($request));
         $token = json_decode($body, true);
 
         if (array_key_exists('error', $token)) {
