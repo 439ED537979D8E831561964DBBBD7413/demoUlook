@@ -33,9 +33,6 @@ class UserController extends Controller {
 
 	public function getSetting() {
 		$user = auth()->user();
-
 		$user['favorites_location'] = $user->locations;
-
-
 	}
 }
