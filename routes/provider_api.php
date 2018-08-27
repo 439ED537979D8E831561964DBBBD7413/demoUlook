@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::group(['middleware' => ['api', 'auth:provider']], function () {
+Route::group(['middleware' => ['api', 'auth:providerapi']], function () {
 
     // user details update routes
     Route::post('logout', 'LoginController@logout');
