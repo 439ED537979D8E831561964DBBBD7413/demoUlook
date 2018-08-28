@@ -27,7 +27,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <table id="example" class="display table table-striped table-bordered dataTable" cellspacing="0"
+                        <table id="example123" class="display table table-striped table-bordered dataTable" cellspacing="0"
                                width="100%" role="grid" aria-describedby="example_info" style="width: 100%;">
                             <thead>
                             <tr role="row">

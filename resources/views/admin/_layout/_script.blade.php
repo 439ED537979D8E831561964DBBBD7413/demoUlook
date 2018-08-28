@@ -28,6 +28,14 @@
                 editable: [[1, 'name'], [2, 'description']]
             }
         });
+
+        $(function() {
+            $('#example123').DataTable({
+                autoFill: true
+            });
+        });
+
+
     });
 </script>
 
