@@ -8,6 +8,7 @@
 <script src="{{ asset('assets/admin/js/lib/table-edit/jquery.tabledit.min.js') }}"></script>
 <script src="{{ asset('assets/admin/js/lib/input-mask/jquery.mask.min.js') }}"></script>
 <script src="{{ asset('assets/admin/js/lib/select2/select2.full.min.js') }}"></script>
+<script src="{{ asset('assets/admin/js/lib/datatables-net/datatables.min.js') }}"></script>
 <script>
     $(function () {
         $(".bar-chart").peity("bar", {

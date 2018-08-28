@@ -16,6 +16,7 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
+<link rel="stylesheet" href="{{ asset('assets/admin/css/lib/datatables-net/datatables.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/admin/css/lib/font-awesome/font-awesome.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/admin/css/lib/bootstrap/bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/admin/css/main.css') }}">
