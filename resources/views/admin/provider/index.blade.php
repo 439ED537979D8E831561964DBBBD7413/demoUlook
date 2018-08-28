@@ -34,15 +34,15 @@
 
                         @foreach ($providers as $provider)
                             <tr role="row" class="odd">
-                                <td class="sorting_1">Airi Satou</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>33</td>
-                                <td>2008/11/28</td>
-                                <td>$162,700</td>
+                                <td class="sorting_1">{{ $provider->id }}</td>
+                                <td>{{ $provider->status }}</td>
+                                <td>{{ $provider->first_name }}</td>
+                                <td>{{ $provider->last_name }}</td>
+                                <td>{{ $provider->mobile }}</td>
+                                <td></td>
                             </tr>
                         @endforeach
-                        
+
                         </tbody>
                     </table>
                 </div>
