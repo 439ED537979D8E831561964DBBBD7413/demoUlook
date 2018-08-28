@@ -44,16 +44,16 @@
                             {{--</th>--}}
                         </tr>
                         </thead>
-                        {{--<tfoot>--}}
-                        {{--<tr>--}}
-                        {{--<th rowspan="1" colspan="1">Name</th>--}}
-                        {{--<th rowspan="1" colspan="1">Position</th>--}}
-                        {{--<th rowspan="1" colspan="1">Office</th>--}}
-                        {{--<th rowspan="1" colspan="1">Age</th>--}}
-                        {{--<th rowspan="1" colspan="1">Start date</th>--}}
-                        {{--<th rowspan="1" colspan="1">Salary</th>--}}
-                        {{--</tr>--}}
-                        {{--</tfoot>--}}
+                        <tfoot>
+                        <tr>
+                            <th rowspan="1" colspan="1">Name</th>
+                            <th rowspan="1" colspan="1">Position</th>
+                            <th rowspan="1" colspan="1">Office</th>
+                            <th rowspan="1" colspan="1">Age</th>
+                            <th rowspan="1" colspan="1">Start date</th>
+                            <th rowspan="1" colspan="1">Salary</th>
+                        </tr>
+                        </tfoot>
                         <tbody>
 
 
