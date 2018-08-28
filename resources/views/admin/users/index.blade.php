@@ -32,13 +32,13 @@
                         </tfoot>
                         <tbody>
 
-                        @foreach ($providers as $provider)
+                        @foreach ($users as $user)
                             <tr role="row" class="odd">
-                                <td class="sorting_1">{{ $provider->id }}</td>
-                                <td>{{ $provider->status }}</td>
-                                <td>{{ $provider->first_name }}</td>
-                                <td>{{ $provider->last_name }}</td>
-                                <td>{{ $provider->mobile }}</td>
+                                <td class="sorting_1">{{ $user->id }}</td>
+                                <td>{{ $user->status }}</td>
+                                <td>{{ $user->first_name }}</td>
+                                <td>{{ $user->last_name }}</td>
+                                <td>{{ $user->mobile }}</td>
                                 <td></td>
                             </tr>
                         @endforeach
