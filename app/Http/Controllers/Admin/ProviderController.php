@@ -8,6 +8,14 @@ use App\Http\Controllers\Controller;
 
 class ProviderController extends Controller
 {
+
+    public function __construct()
+    {
+        if (!auth()->guard('admin')->check()) {
+            return view('admin.auth.login');
+        }
+    }
+
     /**
      * Display a listing of the resource.
      *
