@@ -22,7 +22,7 @@
             <div class="tbl">
                 <div class="tbl-row">
                     <div class="tbl-cell">
-                        <h3>@yield('title')</h3>
+                        @yield('title')
                     </div>
                 </div>
             </div>

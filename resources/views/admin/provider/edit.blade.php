@@ -1,6 +1,13 @@
 @extends('admin._layout.app')
 
-@section('title', 'Providers');
+@section('title')
+
+    <h3>Providers</h3>
+
+    <button id="remove" class="btn btn-danger remove" disabled="">
+        <i class="font-icon font-icon-close-2"></i> Delete
+    </button>
+@endsection
 
 @section('main')
     <section class="card">
