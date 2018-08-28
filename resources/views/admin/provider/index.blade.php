@@ -148,13 +148,133 @@
                                 <td>2012/03/29</td>
                                 <td>$433,060</td>
                             </tr>
+                            <tr role="row" class="odd">
+                                <td class="sorting_1">Charde Marshall</td>
+                                <td>Regional Director</td>
+                                <td>San Francisco</td>
+                                <td>36</td>
+                                <td>2008/10/16</td>
+                                <td>$470,600</td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td class="sorting_1">Colleen Hurst</td>
+                                <td>Javascript Developer</td>
+                                <td>San Francisco</td>
+                                <td>39</td>
+                                <td>2009/09/15</td>
+                                <td>$205,500</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td class="sorting_1">Dai Rios</td>
+                                <td>Personnel Lead</td>
+                                <td>Edinburgh</td>
+                                <td>35</td>
+                                <td>2012/09/26</td>
+                                <td>$217,500</td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td class="sorting_1">Donna Snider</td>
+                                <td>Customer Support</td>
+                                <td>New York</td>
+                                <td>27</td>
+                                <td>2011/01/25</td>
+                                <td>$112,000</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td class="sorting_1">Doris Wilder</td>
+                                <td>Sales Assistant</td>
+                                <td>Sidney</td>
+                                <td>23</td>
+                                <td>2010/09/20</td>
+                                <td>$85,600</td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td class="sorting_1">Finn Camacho</td>
+                                <td>Support Engineer</td>
+                                <td>San Francisco</td>
+                                <td>47</td>
+                                <td>2009/07/07</td>
+                                <td>$87,500</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td class="sorting_1">Fiona Green</td>
+                                <td>Chief Operating Officer (COO)</td>
+                                <td>San Francisco</td>
+                                <td>48</td>
+                                <td>2010/03/11</td>
+                                <td>$850,000</td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td class="sorting_1">Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>2011/07/25</td>
+                                <td>$170,750</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td class="sorting_1">Gavin Cortez</td>
+                                <td>Team Leader</td>
+                                <td>San Francisco</td>
+                                <td>22</td>
+                                <td>2008/10/26</td>
+                                <td>$235,500</td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td class="sorting_1">Gavin Joyce</td>
+                                <td>Developer</td>
+                                <td>Edinburgh</td>
+                                <td>42</td>
+                                <td>2010/12/22</td>
+                                <td>$92,575</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td class="sorting_1">Gloria Little</td>
+                                <td>Systems Administrator</td>
+                                <td>New York</td>
+                                <td>59</td>
+                                <td>2009/04/10</td>
+                                <td>$237,500</td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td class="sorting_1">Haley Kennedy</td>
+                                <td>Senior Marketing Designer</td>
+                                <td>London</td>
+                                <td>43</td>
+                                <td>2012/12/18</td>
+                                <td>$313,500</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td class="sorting_1">Hermione Butler</td>
+                                <td>Regional Director</td>
+                                <td>London</td>
+                                <td>47</td>
+                                <td>2011/03/21</td>
+                                <td>$356,250</td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td class="sorting_1">Herrod Chandler</td>
+                                <td>Sales Assistant</td>
+                                <td>San Francisco</td>
+                                <td>59</td>
+                                <td>2012/08/06</td>
+                                <td>$137,500</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td class="sorting_1">Hope Fuentes</td>
+                                <td>Secretary</td>
+                                <td>San Francisco</td>
+                                <td>41</td>
+                                <td>2010/02/12</td>
+                                <td>$109,850</td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-5">
-                        <div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 10
+                        <div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 25
                             of 57 entries
                         </div>
                     </div>
@@ -173,18 +293,9 @@
                                 <li class="paginate_button page-item "><a href="#" aria-controls="example"
                                                                           data-dt-idx="3" tabindex="0"
                                                                           class="page-link">3</a></li>
-                                <li class="paginate_button page-item "><a href="#" aria-controls="example"
-                                                                          data-dt-idx="4" tabindex="0"
-                                                                          class="page-link">4</a></li>
-                                <li class="paginate_button page-item "><a href="#" aria-controls="example"
-                                                                          data-dt-idx="5" tabindex="0"
-                                                                          class="page-link">5</a></li>
-                                <li class="paginate_button page-item "><a href="#" aria-controls="example"
-                                                                          data-dt-idx="6" tabindex="0"
-                                                                          class="page-link">6</a></li>
                                 <li class="paginate_button page-item next" id="example_next"><a href="#"
                                                                                                 aria-controls="example"
-                                                                                                data-dt-idx="7"
+                                                                                                data-dt-idx="4"
                                                                                                 tabindex="0"
                                                                                                 class="page-link">Next</a>
                                 </li>
@@ -199,8 +310,8 @@
 
 @section('script')
     <script>
-        $('#example123').DataTable({
-            autoFill: true
+        $(function () {
+            $('#example').DataTable();
         });
     </script>
 @stop

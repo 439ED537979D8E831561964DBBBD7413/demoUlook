@@ -36,5 +36,7 @@
 </div><!--.page-content-->
 
 @include('admin._layout._script');
+
+@yield('script')
 </body>
 </html>
