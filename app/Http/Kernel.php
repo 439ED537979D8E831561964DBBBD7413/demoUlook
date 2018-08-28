@@ -61,5 +61,7 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'oauth.providers' => \SMartins\PassportMultiauth\Http\Middleware\AddCustomProvider::class,
+        'oauth.admins' => \SMartins\PassportMultiauth\Http\Middleware\AddCustomProvider::class,
+
     ];
 }
