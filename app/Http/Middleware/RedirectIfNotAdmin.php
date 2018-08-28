@@ -17,7 +17,7 @@ class RedirectIfNotAdmin
     {
 
         if (!auth()->guard('admin')->check()) {
-            return view('admin.loginForm');
+            return route('admin.loginForm');
         }
 
         return $next($request);
