@@ -16,6 +16,8 @@ class DashboardController extends Controller
     public function index()
     {
 
+        auth()->guard('admin')->check();
+
         return auth()->guard('admin')->user();
 
         return view('admin.dashboard');
