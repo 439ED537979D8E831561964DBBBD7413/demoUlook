@@ -29,12 +29,6 @@
             }
         });
 
-        $(function() {
-            $('#example123').DataTable({
-                autoFill: true
-            });
-        });
-
 
     });
 </script>
