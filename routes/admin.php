@@ -7,38 +7,35 @@ Route::get('login', 'Auth\LoginController@showLoginForm');
 Route::post('login', 'Auth\LoginController@login')->name('login');
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
-Route::group(['middleware' => ['auth:admin']], function () {
 
+// dashboard
+Route::get('dashboard', 'DashboardController@index')->name('dashboard');
 
-    // dashboard
-    Route::get('dashboard', 'DashboardController@index')->name('dashboard');
+// users
+Route::resource('users', 'UserController');
 
-    // users
-    Route::resource('users', 'UserController');
+// providers
+Route::resource('providers', 'ProviderController');
 
-    // providers
-    Route::resource('providers', 'ProviderController');
+// services
+Route::resource('services', 'ServiceController');
 
-    // services
-    Route::resource('services', 'ServiceController');
+// documents
+Route::resource('documents', 'DocumentController');
 
-    // documents
-    Route::resource('documents', 'DocumentController');
+//
+Route::resource('promocodes', 'PromocodeController');
 
-    //
-    Route::resource('promocodes', 'PromocodeController');
+//
+Route::get('reviews', 'DashboardController@index');
 
-    //
-    Route::get('reviews', 'DashboardController@index');
+//
+Route::get('requests', 'DashboardController@index');
 
-    //
-    Route::get('requests', 'DashboardController@index');
+// setting
+Route::get('settings', 'SettingController@index')->name('settings.index');
+Route::post('settings', 'SettingController@store')->name('settings.store');
 
-    // setting
-    Route::get('settings', 'SettingController@index')->name('settings.index');
-    Route::post('settings', 'SettingController@store')->name('settings.store');
-
-    //
-    Route::get('payments', 'DashboardController@index');
-    Route::get('payments/history', 'DashboardController@index');
-});
+//
+Route::get('payments', 'DashboardController@index');
+Route::get('payments/history', 'DashboardController@index');
