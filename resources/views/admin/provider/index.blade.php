@@ -4,7 +4,7 @@
 
     <h3>Providers</h3>
 
-    <button id="remove" class="btn btn-danger remove" disabled="">
+    <button id="remove" class="btn btn-danger remove pull-right" disabled="">
         <i class="font-icon font-icon-close-2"></i> Delete
     </button>
 @endsection
