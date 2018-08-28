@@ -19,7 +19,6 @@
                             <th class="sorting_asc">Last Name</th>
                             <th class="sorting">Mobile Number</th>
                             <th class="sorting">Certificate Number</th>
-                            <th class="sorting">Rating</th>
 
                             {{--<th class="sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1"--}}
                             {{--aria-sort="ascending" aria-label="Name: activate to sort column descending"--}}
@@ -46,12 +45,12 @@
                         </thead>
                         <tfoot>
                         <tr>
-                            <th rowspan="1" colspan="1">Name</th>
-                            <th rowspan="1" colspan="1">Position</th>
-                            <th rowspan="1" colspan="1">Office</th>
-                            <th rowspan="1" colspan="1">Age</th>
-                            <th rowspan="1" colspan="1">Start date</th>
-                            <th rowspan="1" colspan="1">Salary</th>
+                            <th rowspan="1" colspan="1">ID</th>
+                            <th rowspan="1" colspan="1">Status</th>
+                            <th rowspan="1" colspan="1">First Name</th>
+                            <th rowspan="1" colspan="1">Last Name</th>
+                            <th rowspan="1" colspan="1">Mobile Number</th>
+                            <th rowspan="1" colspan="1">Certificate Number</th>
                         </tr>
                         </tfoot>
                         <tbody>
