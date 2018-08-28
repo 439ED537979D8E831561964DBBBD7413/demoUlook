@@ -9,13 +9,6 @@ use App\Http\Controllers\Controller;
 class ProviderController extends Controller
 {
 
-    public function __construct()
-    {
-        if (!auth()->guard('admin')->check()) {
-            return view('admin.auth.login');
-        }
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -23,9 +16,13 @@ class ProviderController extends Controller
      */
     public function index()
     {
+        //
+        if (!auth()->guard('admin')->check()) {
+            return view('admin.auth.login');
+        }
 
         $providers = Provider::orderBy('created_at', 'desc')->paginate(12);
-        return view('admin.provider.index');
+        return view('admin.provider.index', compact('providers'));
     }
 
     /**
