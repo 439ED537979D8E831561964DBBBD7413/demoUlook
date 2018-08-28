@@ -1,6 +1,6 @@
 @extends('admin._layout.app')
 
-@section('title', 'Provider');
+@section('title', 'Providers');
 
 @section('main')
     <section class="card">
